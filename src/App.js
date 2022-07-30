@@ -45,7 +45,7 @@ const Styles = {
 }
 
 function App() {
-  const [step,SetStep] = useState(5);
+  const [step,SetStep] = useState(0);
   const [personalData,setPersonalData] = useState({
     name : "",
     number : "",
