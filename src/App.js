@@ -5,6 +5,7 @@ import WorkDetails from "./components/WorkDetails";
 import Skills from "./components/Skills";
 import ProjectDetails from "./components/ProjectDetails";
 import Preview from "./components/Preview";
+import './components/App.css';
 
 const Styles = {
   BodyStyle : {
@@ -16,7 +17,7 @@ const Styles = {
   justifyContent : "center",
   alignItems : "center",
   color : "white",
-  fontFamily : "monospace"
+  fontFamily : "Inter"
   },
   FormStyle : {
     backgroundColor : "#22181c",
@@ -100,7 +101,7 @@ function App() {
     else if(step === 3)
     {
       return(<>
-      <div style={Styles.header}>Skills</div>
+      <div style={Styles.header}>Skill Details</div>
       <Skills formData={skills} setFormData={setSkills}/>
       </>)
     }
@@ -120,12 +121,12 @@ function App() {
   };
 
   return (
-    <div style={Styles.BodyStyle}>
-      <div style={Styles.FormStyle}>
+    <div className="body">
+      <div className="form">
         {FormStep()}
-        <div style={Styles.Row}>
-          <input type='button' value="Prev" hidden={step===0} style={Styles.Button} onClick={()=>SetStep(step-1)}/>
-          <input type='button' value="Next" hidden={step===5} style={Styles.Button} onClick={()=>SetStep(step+1)}/>
+        <div className={(step===0||step===4)?"col-1":"col-2"}>
+          <input type='button' value="Prev" hidden={step===0} className={(step===0||step===4)?'button button-single':'button'} onClick={()=>SetStep(step-1)}/>
+          <input type='button' value="Next" hidden={step===5} className={(step===0||step===4)?'button button-single':'button'} onClick={()=>SetStep(step+1)}/>
         </div>
       </div>
     </div>

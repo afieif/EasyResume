@@ -11,6 +11,23 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+#printablediv{
+    display: none;
+}
+
+.page-view {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 2cm;
+    margin: 1cm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
 .printbtn {
     padding : 10px 25px;
     background-color : #84dccf; 
@@ -41,5 +58,12 @@
         box-shadow: initial;
         background: initial;
         page-break-after: always;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .page-view{
+        width: 80vw;
+        padding: 0.5cm;
     }
 }
