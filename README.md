@@ -1,5 +1,8 @@
 # Easy Resume 📜
-### A resume maker built using ReactJS which helps you build and print your resume
+### A resume builder developed using ReactJS which helps you build and print your resume
+
+<a href='https://easy-re5ume.netlify.app/'>Live Link!</a>
+
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/60255809/189705781-87d76576-d7b5-4fe8-aac5-90ed172472b0.png)
 ![image](https://user-images.githubusercontent.com/60255809/189706050-faeca46e-fd53-45f2-a823-0fa13110ca62.png)
